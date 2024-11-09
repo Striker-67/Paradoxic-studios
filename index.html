@@ -9,65 +9,85 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            background: linear-gradient(135deg, #ff0000, #00ff00, #0000ff);
-            color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            background-size: 300% 300%;
-            animation: rgbFade 8s ease infinite;
-            padding: 15px;
+            background: linear-gradient(135deg, #212121, #333);
+            color: #ffffff;
+            overflow: hidden;
+            animation: bgPulse 10s infinite alternate;
         }
 
-        @keyframes rgbFade {
-            0% { background-position: 0% 50%; }
-            33% { background-position: 100% 50%; }
-            66% { background-position: 50% 100%; }
-            100% { background-position: 0% 50%; }
+        @keyframes bgPulse {
+            0% { background: linear-gradient(135deg, #1a1a1a, #333333); }
+            100% { background: linear-gradient(135deg, #0e0e0e, #444444); }
         }
 
         .container {
-            background: linear-gradient(135deg, #33334d, #252539);
-            border-radius: 15px;
-            width: 100%;
-            max-width: 600px;
-            padding: 25px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-            color: #ffffff;
             text-align: center;
-            transform: scale(1);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+            max-width: 600px;
+            width: 90%;
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .container:hover {
             transform: scale(1.05);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 40px 70px rgba(0, 0, 0, 0.9);
         }
 
         h1 {
-            font-size: 2.2em;
+            font-size: 2.8em;
             margin-bottom: 20px;
-            color: #ffd700;
-            text-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-            animation: titleFade 3s ease-in-out infinite alternate;
+            color: #ffdb58;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            animation: textGlow 4s ease-in-out infinite alternate;
         }
 
-        @keyframes titleFade {
+        @keyframes textGlow {
             0% { color: #ffd700; }
-            50% { color: #fff1c1; }
-            100% { color: #ffeb3b; }
+            100% { color: #fff2b1; }
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #cccccc;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 10px 25px;
+            font-size: 1.1em;
+            color: #fff;
+            background: linear-gradient(135deg, #ff5722, #ff9800);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #ff9800, #ff5722);
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Paradoxic Studios</h1>
-        <p>Gyatt</p></p>
+        <p>Poop</p>
+        <button>FUCK YOU STRIKER</button>
     </div>
 </body>
 </html>
