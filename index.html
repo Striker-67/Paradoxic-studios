@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="FavIcon.ico">
+    <link rel="shortcut icon"
+        href="https://raw.githubusercontent.com/Striker-67/Paradoxic-studios/refs/heads/main/FavIcon.ico">
     <title>Paradoxic Studios</title>
     <style>
         * {
@@ -18,80 +20,70 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            background-image: url('ParaLong.jpg'); 
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: #ffffff;
+            background: url('https://github.com/Striker-67/Paradoxic-studios/blob/main/Para.jpg?raw=true') no-repeat center/cover fixed;
+            color: #fff;
             overflow: hidden;
-            animation: bgPulse 10s infinite alternate;
-        }
-
-        @keyframes bgPulse {
-            0% { background: linear-gradient(135deg, #3b3b98, #6a0dad); }
-            100% { background: linear-gradient(135deg, #3a1f5d, #8e44ad); }
         }
 
         .container {
             text-align: center;
-            background: rgba(20, 20, 50, 0.8);
+            background: rgba(20, 20, 50, 0.85);
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
             max-width: 600px;
             width: 90%;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .container:hover {
-            transform: scale(1.05);
-            box-shadow: 0 40px 70px rgba(0, 0, 0, 0.9);
+            transform: scale(1.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
         }
 
         h1 {
-            font-size: 2.8em;
+            font-size: 2.5em;
             margin-bottom: 20px;
             color: #d1a3ff;
-            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-            animation: textGlow 4s ease-in-out infinite alternate;
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+            animation: textGlow 3s infinite alternate ease-in-out;
         }
 
         @keyframes textGlow {
-            0% { color: #c084f5; }
-            100% { color: #f0c1ff; }
-        }
+            0% {
+                color: #c084f5;
+            }
 
-        p {
-            font-size: 1.2em;
-            color: #cccccc;
-            margin-top: 10px;
-            line-height: 1.6;
+            100% {
+                color: #f0c1ff;
+            }
         }
 
         button {
-            margin-top: 30px;
-            padding: 10px 25px;
-            font-size: 1.1em;
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 1.2em;
             color: #fff;
             background: linear-gradient(135deg, #9b59b6, #6a0dad);
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             cursor: pointer;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
         }
 
         button:hover {
-            background: linear-gradient(135deg, #6a0dad, #9b59b6);
-            transform: scale(1.05);
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Welcome to Paradoxic Studios</h1>
-        <p>Poop</p>
-        <button>FUCK YOU STRIKER</button>
+        <button>Get Started</button>
     </div>
 </body>
+
 </html>
