@@ -2,88 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon"
-        href="https://raw.githubusercontent.com/Striker-67/Paradoxic-studios/refs/heads/main/FavIcon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Striker-67/Paradoxic-studios/refs/heads/main/FavIcon.ico" />
     <title>Paradoxic Studios</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background: url('https://github.com/Striker-67/Paradoxic-studios/blob/main/Para.jpg?raw=true') no-repeat center/cover fixed;
-            color: #fff;
-            overflow: hidden;
-        }
-
-        .container {
-            text-align: center;
-            background: rgba(20, 20, 50, 0.85);
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-            max-width: 600px;
-            width: 90%;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .container:hover {
-            transform: scale(1.1);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #d1a3ff;
-            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-            animation: textGlow 3s infinite alternate ease-in-out;
-        }
-
-        @keyframes textGlow {
-            0% {
-                color: #c084f5;
-            }
-
-            100% {
-                color: #f0c1ff;
-            }
-        }
-
-        button {
-            margin-top: 20px;
-            padding: 12px 30px;
-            font-size: 1.2em;
-            color: #fff;
-            background: linear-gradient(135deg, #9b59b6, #6a0dad);
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-        }
-
-        button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Welcome to Paradoxic Studios</h1>
-        <button>Get Started</button>
+        <h4>We create immersive low-poly games for VR and PC. Head over to our Games page to check out some of our unique and exciting titles!</h4>
+    </div>
+
+    <div class="container">
+        <h1>What We Offer</h1>
+        <h3>We provide a variety of fun, free-to-play games for all ages. Whether you're a casual player or a VR enthusiast, there's something for everyone!</h3>
+        <a href="/games">Explore Games</a>
+        <a href="https://discord.gg/CaHFJ8QTDS">Discord</a>
     </div>
 </body>
+
+<footer>
+    <div class="container">
+        <a href="/privacypolicy">Privacy Policy</a>
+    </div>
+</footer>
 
 </html>
